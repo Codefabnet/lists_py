@@ -25,3 +25,5 @@ print(test_str[20:])
 
 print(test_str.find("d"))
 print(test_str.find("j"))
+for idx in range(len(test_str)):
+    print(f"this is test_str: {test_str[idx:idx+1]}")
