@@ -37,6 +37,10 @@ else:
     # Default player input.
     player_input = "rock"
 
+    # Random house input if none given.
+    house_choice = int(random.choice("012"))
+    house_input = moves[house_choice]
+
 # Check for valid input.
 if player_input not in moves:
     sys.exit(f"Incorrect move: {player_input}")
