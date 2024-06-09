@@ -123,3 +123,13 @@ print("First list item in outer list ".ljust(31), c[0])
 print("Second list item in outer list ".ljust(45), c[1])
 print("First item in first list".ljust(32), c[0][0])
 print("First item in second list".ljust(46), c[1][0])
+
+print()
+
+resp = input("Show list functions: 'Y' or 'N': ")
+
+print()
+
+if resp == 'Y' or resp == 'y':
+    with open('list_funcs.txt', 'r') as f:
+        print(f.read())
