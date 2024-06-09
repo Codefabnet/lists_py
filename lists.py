@@ -133,3 +133,5 @@ print()
 if resp == 'Y' or resp == 'y':
     with open('list_funcs.txt', 'r') as f:
         print(f.read())
+#        for line in f:   # This adds an extra line in output.
+#            print(line)
