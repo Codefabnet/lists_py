@@ -18,7 +18,7 @@ print()
 print()
 
 print("An empty list ")
-print("--------------") 
+print("--------------")
 empty_list = []
 print("empty_list:", empty_list)
 
@@ -26,7 +26,7 @@ print()
 print()
 
 print("Check if item is in list ")
-print("-----------------------------------------") 
+print("-----------------------------------------")
 print("Is Dave in user_list?".ljust(35), "Dave" in user_list) #True
 print("Is Dave in data_list?".ljust(35), "Dave" in data_list) #True
 print("Is Dave in empty_list?".ljust(35), "Dave" in empty_list) #False
@@ -35,7 +35,7 @@ print()
 print()
 
 print("Print item at list index ")
-print("--------------------------------------------------------") 
+print("--------------------------------------------------------")
 print("First item in user_list, index '0'".ljust(45),
        user_list[0].rjust(10, "."))                 # First item - index '0'
 print("Last item in user_list, index '-1'".ljust(45),
@@ -47,7 +47,7 @@ print()
 print()
 
 print("Copy using assignment, '=', creates a new reference to a single list.")
-print("---------------------------------------------------------------------") 
+print("---------------------------------------------------------------------")
 user_list_copy = user_list
 print("Copy user_list".ljust(23), user_list_copy)
 user_list_copy.append('Steve')
@@ -58,7 +58,7 @@ print("user_list updated through copied list:\n"
 print()
 print()
 
-print("----------------------------------------------------------") 
+print("----------------------------------------------------------")
 print("For a slice specifier, the right index points just past\n"
       "the range sought, or the last item if not present.\n\n"
       "Using negative numbers, where x = number of items.\n"
@@ -71,7 +71,7 @@ print("For a slice specifier, the right index points just past\n"
 
 print("A slice operation creates a new list object\n"
       "new_list = list[x:y], new_list may just be a print param.")
-print("----------------------------------------------------------") 
+print("----------------------------------------------------------")
 full_slice = user_list[:]
 
 print("Slice of user_list, full slice: [:]\n"
@@ -91,7 +91,7 @@ print()
 
 print("Using a slice to change or clear existing list items.\n"
       "list[x:y] = modifying_list[x:y]")
-print("----------------------------------------------------------") 
+print("----------------------------------------------------------")
 print("user_list: ".ljust(25), user_list)
 user_list[2:5] = ['Tom', 'Dick', 'Harry']
 print("Changed user_list by slice: [2:5]\n"
@@ -113,7 +113,7 @@ print()
 
 
 print("Nesting lists.")
-print("----------------------------------------------------------") 
+print("----------------------------------------------------------")
 a = [1, 2, 3, 4]
 b = [0, 1, 2, 3]
 c = [a, b]
@@ -132,6 +132,8 @@ print()
 
 if resp == 'Y' or resp == 'y':
     with open('list_funcs.txt', 'r') as f:
+        print("List Functions")
+        print("----------------------------------------------------------")
         print(f.read())
 #        for line in f:   # This adds an extra line in output.
 #            print(line)
@@ -144,4 +146,6 @@ print()
 
 if resp == 'Y' or resp == 'y':
     with open('list_comprehension.txt', 'r') as f:
+        print("List Comprehension")
+        print("----------------------------------------------------------")
         print(f.read())
