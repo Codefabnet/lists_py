@@ -118,11 +118,11 @@ a = [1, 2, 3, 4]
 b = [0, 1, 2, 3]
 c = [a, b]
 
-print("A list of lists:".ljust(30), c)
-print("First list item in outer list ".ljust(31), c[0])
-print("Second list item in outer list ".ljust(45), c[1])
-print("First item in first list".ljust(32), c[0][0])
-print("First item in second list".ljust(46), c[1][0])
+print("A list of lists, c:".ljust(35), c)
+print("First list item in outer list c[0]:".ljust(36), c[0])
+print("Second list item in outer list c[1]:".ljust(50), c[1])
+print("First item in first list c[0][0]:".ljust(37), c[0][0])
+print("First item in second list c[1][0]:".ljust(51), c[1][0])
 
 print()
 
@@ -135,3 +135,13 @@ if resp == 'Y' or resp == 'y':
         print(f.read())
 #        for line in f:   # This adds an extra line in output.
 #            print(line)
+
+print()
+
+resp = input("Show list comprehension: 'Y' or 'N': ")
+
+print()
+
+if resp == 'Y' or resp == 'y':
+    with open('list_comprehension.txt', 'r') as f:
+        print(f.read())
